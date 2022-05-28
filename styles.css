@@ -10,19 +10,29 @@ body {
   padding: 70px;
 }
 
-@media only screen and (max-width: 800px) {
-  .header {
-    width: auto;
-  }
+@media only screen and (max-width: 1000px) {
+.header {
+  width: auto;
+  margin-bottom: 10%;
+ }
 }
+
 
 .nav {
   display: flex;
   justify-content: space-between;;
   text-decoration: none;
   color: #07043B;
-  width: 20%;
-  font-family: 'Open sans'
+  width: 60vh;
+  font-family: 'Open sans';
+  flex-basis: 30%;
+}
+
+@media only screen and (max-width: 1000px) {
+.nav {
+  flex-basis: 50%;
+  font-size: 28px;
+ }
 }
 
 .nav-a {
@@ -30,24 +40,27 @@ body {
   color: black;
 }
 
-@media only screen and (max-width: 800px) {
-  .nav {
-    width: auto;
-  }
-}
-
-
 .main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 800px) {
+
+
+@media only screen and (max-width: 1000px) {
+.ill1 {
+  display: flex;
+  height: 100%;
+  width: auto;
+ }
+}
+
+@media only screen and (max-width: 1000px) {
   .main {
     display: flex;
-    flex-direction: column;
-    width: 100vh;
+    flex-direction: column-reverse;
+    padding: 0 50px;
     text-align: center;
   }
 }
@@ -59,27 +72,53 @@ body {
   padding: 70px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .text1 {
+    width: auto;
+    padding: 0 50px;
+  }
+}
+
 .text1 h2 {
   font-family: 'Raleway';
   font-size: 40px;
   color: #07043B;
 }
 
+@media only screen and (max-width: 1000px) {
+  .text1 h2 {
+    font-size: 52px;
+    width: auto;
+  }
+}
+
 .text1 p {
   font-family: 'Open sans';
   color: #07043B;
   font-size: 17px;
+  width: 80%;
 }
 
-@media only screen and (max-width: 800px) {
-  .p {
-
+@media only screen and (max-width: 1000px) {
+  .text1 p {
+    font-size: 32px;
+    width: auto;
   }
 }
 
 .input {
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 1000px) {
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    margin-top: 20px;
+  }
 }
 
 .input input {
@@ -90,7 +129,13 @@ body {
   font-family: 'Open sans';
   font-size: 14px;
   color: #C2C2C2;
+}
 
+@media only screen and (max-width: 1000px) {
+  .input input {
+    padding: 25px;
+    font-size: 24px;
+  }
 }
 
 .input button {
@@ -106,6 +151,16 @@ body {
   font-size: 14px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .input button {
+    margin: 0;
+    padding: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5% 0;
+  }
+}
+
 .input button:hover {
   background-color: #58A1FF;
   cursor: pointer;
@@ -119,14 +174,15 @@ body {
   padding-top: 3%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 .illustration-1 {
-  display: flex;
-  height: 10%;
-  width: 10%;
-  padding-top: 10px;
+  width: auto;
+  height: 40vh;
+  padding: 40px 35px;
+  align-self: center;
  }
 }
+
 
 .middle {
   display: flex;
@@ -137,12 +193,33 @@ body {
   padding: 0 0 50px 0;
 }
 
+@media only screen and (max-width: 1000px) {
+  .middle {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    height: 80%;
+    width: auto;
+
+  }
+}
+
+
 .text2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 70px;
+  padding: 0 50px;
   width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text2 {
+    width: auto;
+    align-items: center;
+    padding: 0;
+    margin-top: 10%;
+  }
 }
 
 .text2 h2 {
@@ -157,11 +234,28 @@ body {
   color: #07043B;
 }
 
+@media only screen and (max-width: 1000px) {
+  .text2 p {
+    font-size: 32px;
+  }
+}
+
  .text2 a {
    font-family: 'Open sans';
    color: #3DA08F;
    text-decoration: none;
  }
+
+/* NO
+.text2 a:after {
+  content: '';
+  position: absolute;
+  width: 13%;
+  bottom: -290px;
+  left: 50px;
+  height: 2px;
+  background-color: #3DA08F;
+}  */
 
  .text2 a:hover {
    cursor: pointer;
@@ -177,6 +271,14 @@ body {
 
 .arrow-link:hover {
   color: #71DFCC;
+}
+
+@media only screen and (max-width: 1000px) {
+  .arrow-link {
+    font-size: 28px;
+    width: 32%;
+    margin: 5% 0;
+  }
 }
 
  .icon-arrow {
@@ -200,9 +302,26 @@ body {
   border-radius: 5px;
   width: 45%;
   margin-top: 40px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.5px;;
   color: #07043B;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 70%;
+    padding-left: 7%;
+    padding-top: 7%;
+    align-content: center;
+    text-align: left;
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container p {
+    width: auto;
+  }
 }
 
 .avatar {
@@ -218,19 +337,44 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .kyle {
+   justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .kyle p {
+   margin-left: 10px;
+   font-size: 24px;
+  }
+}
 .illustration-2 {
   display: flex;
   width: 40%;
   height: 50vh;
-  margin-top: 15%
+  margin-top: 15%;
 }
 
-@media only screen and (max-width: 800px) {
-  .illustration-2 {
-    width: 10%;
-    height: 10%
-  }
+@media only screen and (max-width: 1000px) {
+.illustration-2 {
+  width: auto;
+  height: 40vh;
+  padding: 40px 35px;
+  align-self: center;
+  margin-top: 20%;
+ }
 }
+
+
+@media only screen and (max-width: 1000px) {
+.ill2 {
+  display: flex;
+  height: 100%;
+  width: auto;
+ }
+}
+
 
 .form {
   display: flex;
@@ -241,8 +385,30 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 50%;
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+
 .form-text {
   width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px;
+    width: auto;
+  }
 }
 
 .form-text h3 {
@@ -251,28 +417,80 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 1000px) {
+  .form-text h3 {
+    font-size: 40px;
+  }
+}
+
+
 .form-text p {
   font-family: 'Open sans';
   color: white;
   width: 80%;
 }
 
+
+@media only screen and (max-width: 1000px) {
+  .form-text p {
+    font-size: 32px;
+    width: 80%;
+  }
+}
+
  .form-input {
    display: flex;
    flex-direction: column;
-   height: 10vh;
-   justify-content: space-between;
    color: #C0C0C0;
    width: 50%;
  }
 
-.form-input .box input {
-  width: 50%;
-  box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+@media only screen and (max-width: 1000px) {
+  .form-input {
+    width: 70%;
+    margin-bottom: 15%;
+  }
 }
 
-.form-input .button {
+.box input {
+  width: 80%;
+  box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .box input {
+    padding: 30px;
+    font-size: 24px;
+    width: 90%;
+  }
+}
+
+.button button {
+  width: 40%;
   background-color: #2F65F8;
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+  margin-top: 5%;
+  color: white;
+  font-weight: bolder;
+}
+
+.button button:hover {
+  background-color: #58A1FF;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .button button {
+    padding: 30px;
+    font-size: 24px;
+    width: 100%;
+  }
 }
 
 .footer {
@@ -286,8 +504,20 @@ body {
   font-family: 'Open sans';
 }
 
+@media only screen and (max-width: 1000px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 15%;
+    height: 80%;
+    align-items: flex-start;
+    font-size: 32px;
+    padding-left: 10%;
+  }
+}
+
 .footer-logo {
   width: 20vh;
+  margin-bottom: 10px;
 }
 
 .phone {
@@ -295,7 +525,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%
+  width: 100%;
+  margin-top: 15px;
 }
 
 .email {
@@ -323,6 +554,13 @@ body {
   width: 20%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .contact {
+    justify-content: space-between;
+    width: 55%;
+  }
+}
+
 .list1 {
   display: flex;
   flex-direction: column;
@@ -331,7 +569,20 @@ body {
   color: white;
   list-style: none;
   font-size: 14px;
+}
 
+.list1 li:hover {
+  cursor: pointer;
+  color: #6C9BFF;
+}
+
+@media only screen and (max-width: 1000px) {
+  .list1 {
+    font-size: 34px;
+    padding: 0;
+    margin-top: 5%;
+    margin-left: -5%;
+  }
 }
 
 .list2 {
@@ -341,22 +592,51 @@ body {
   font-size: 14px;
 }
 
+.list2 li:hover {
+  cursor: pointer;
+  color: #6C9BFF;
+}
+
+@media only screen and (max-width: 1000px) {
+  .list2 {
+    font-size: 34px;
+    padding: 0;
+    margin-left: -5%;
+  }
+}
+
 .icons {
   padding: 0 10%;
-  width: 25%
+  width: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons:hover {
+  color: #6C9BFF;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .icons {
+    padding: 0 0 10% 0;
+    align-self: center;
+    justify-content: space-between;
+    width: 30%;
+  }
 }
 
 .facebook-icon {
-  width: 5%;
-  height: 5%;
+  width: 3vh;
+  height: 3vh;
 }
 
 .twitter-icon {
-  width: 5%;
-  height: 5%;
+  width: 3vh;
+  height: 3vh;
 }
 
 .instagram-icon {
-  width: 5%;
-  height: 5%;
+  width: 3vh;
+  height: 3vh;
 }
